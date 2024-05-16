@@ -1,17 +1,31 @@
 <mxfile host="65bd71144e">
     <diagram id="HIP3nbAZw_EuaXWnEj3U" name="Page-1">
-        <mxGraphModel dx="443" dy="296" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="426" dy="135" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="4" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;" edge="1" parent="1" source="2" target="3">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="4" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="2" target="19" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="280" y="390" as="targetPoint"/>
+                    </mxGeometry>
                 </mxCell>
                 <mxCell id="2" value="Start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" parent="1" vertex="1">
                     <mxGeometry x="230" y="310" width="100" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="3" value="Stop" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" parent="1" vertex="1">
-                    <mxGeometry x="230" y="450" width="100" height="60" as="geometry"/>
+                    <mxGeometry x="425" y="550" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=9;" edge="1" parent="1" source="19" target="20">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;user enters value&lt;br&gt;of lengthA, &lt;br&gt;lengthB, and lengthC.&lt;/font&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="220" y="400" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;angleA = Math.acos(&lt;br&gt;(lengthB**2 + lengthC**2 - lengthA**2) / (&lt;br&gt;2 * lengthB * lengthC)&lt;br&gt;) * (180/Math.PI)&lt;/font&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=9;" vertex="1" parent="1">
+                    <mxGeometry x="235" y="490" width="90" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;angleA = Math.acos(&lt;br&gt;(lengthB**2 + lengthC**2 - lengthA**2) / (&lt;br&gt;2 * lengthB * lengthC)&lt;br&gt;) * (180/Math.PI)&lt;/font&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=9;" vertex="1" parent="1">
+                    <mxGeometry x="235" y="610" width="90" height="90" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
