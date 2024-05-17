@@ -1,9 +1,67 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Equilateral / Isosceles / Scalene" />
+    <meta name="keywords" content="mths, ics2o" />
+    <meta name="author" content="Pablo Fiallos" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.yellow-lime.min.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <title>Equilateral / Isosceles / Scalene</title>
   </head>
   <body>
-    <p>Paragraph</p>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="./js/script.js"></script>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Equilateral / Isosceles / Scalene</span>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <div class="right-image">
+          <img src="./images/triangles.png" alt="triangles" width="250" />
+        </div>
+        <div class="page-content">Please enter the following (with respect to a triangle):</div>
+        <br />
+        <br/>
+        <form action="#">
+          <p>Length <i>a</i>:</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="lengthA">
+            <label class="mdl-textfield__label" for="lengthA-entered">enter...</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+          <p>Length <i>b</i>:</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="lengthB">
+            <label class="mdl-textfield__label" for="lengthB-entered">enter...</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+          <p>Length <i>c</i>:</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="lengthC">
+            <label class="mdl-textfield__label" for="lengthC-entered">enter...</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+          <br />
+          <!-- Accent-colored raised button with ripple -->
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+            onclick="enterClicked()">
+            Enter
+          </button>
+        </form>
+        <br />
+        <div class="page-content-answer">
+          <div id="user-info"></div>
+        </div>
+      </main>
+    </div>
   </body>
 </html>
